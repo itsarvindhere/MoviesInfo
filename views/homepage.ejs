@@ -1,0 +1,24 @@
+<%- include ("partials/header") %>
+
+<div class="home jumbotron">
+
+    <div class="title container">
+    <h1 class="display-4">MoviesInfo</h1>
+    <p class="lead">A Simple Website on which you can get details of a Movie by typing its name in the Search Box below.</p>
+    
+</div>
+  </div>
+
+  
+  <div class="container-fluid">
+  <form action="/" method="post">
+    <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Movie Name" name="movieName">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="submit">See Details</button>
+    </div>
+  </div>
+  </form>
+  </div>
+
+<%- include ("partials/footer") %>

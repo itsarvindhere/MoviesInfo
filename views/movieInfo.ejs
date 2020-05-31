@@ -1,0 +1,75 @@
+<%- include ("partials/header") %>
+<div class="fluid-container">
+
+    <form action="/back" method="post" style="text-align: center; padding: 2rem;">
+        <button type="submit" class="btn btn-dark">Search Another Movie</button>
+    </form>
+
+
+    <div class="movie-card card mb-3">
+        <div class="row no-gutters">
+          <div class="col-lg-4">
+            <img src="<%=moviePoster %>" class="card-img" alt="<%= movieTitle %>">
+          </div>
+
+
+          <div class="col-lg-8">
+            <div class="card-body">
+              <h5 class="card-title"><%= movieTitle %></h5>
+              <p class="movie-plot card-text text-center" ><%= moviePlot %></p>
+              <!-- Other Info -->
+
+              <ul class="list-group list-group-flush" style="text-align: center; font-style: italic;">
+                <li class="list-group-item">Genre &mdash; <%=genre%></li>
+                <li class="list-group-item">Director &mdash; <%=director%></li>
+                <li class="list-group-item">Language &mdash; <%=language%></li>
+                <li class="list-group-item">Awards &mdash; <%=awards%></li>
+                <li class="list-group-item">Rated &mdash; <%=rated%></li>
+              </ul>
+
+              <!-- Ratings -->
+
+              <div class="row" style="text-align: center;">
+                <div class="col-sm-4">
+                  <div class="rating-card card">
+                    <div class="card-body">
+                      <h5 class="card-title"><img class="rating-image" src="/images/imdb.png" alt="IMDB"></h5>
+                      <p class=" rating-text card-text"><%=imdbRating%></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="rating-card card">
+                    <div class="card-body">
+                      <h5 class="card-title"><img class="rating-image" src="/images/rotten.png" alt="IMDB"></h5>
+                      <p class=" rating-text card-text"><%=rottenRating%></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="rating-card card">
+                      <div class="card-body">
+                        <h5 class="card-title"><img class="rating-image" src="/images/meta.png" alt="IMDB"></h5>
+                        <p class="rating-text card-text"><%=metacriticRating%></p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+</div>
+
+
+
+
+
+<%- include ("partials/footer") %>

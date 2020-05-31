@@ -1,0 +1,71 @@
+body {
+    font-family: "poppins";
+}
+
+.title{
+    text-align: center;
+    
+}
+
+.title h1 {
+    font-weight: 700;
+   
+}
+
+
+.container-fluid {
+    max-width: 80%;
+  }
+.home {
+    color:  white;
+    background-image: linear-gradient(to right,rgb(0, 0, 0, .9), rgb(0, 0, 0, .9)), url(/images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    text-align: center;
+}
+
+.card-title {
+    font-weight: 700;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.movie-card {
+    padding: 2rem;
+}
+
+
+.rating-text {
+    font-size: 2rem;
+}
+
+.rating-card {
+    margin-bottom: 1rem;
+}
+
+.movie-plot {
+    margin-bottom: 2rem;
+}
+
+.rating-image {
+    height: 50px;
+
+}
+
+@media (max-width: 1317px) {
+
+    .card-title {
+        
+        font-size: 2rem;
+    }
+
+    .rating-image {
+        height: 35px;
+    
+    }
+
+ }
+
