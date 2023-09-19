@@ -6,6 +6,7 @@
   "homepage": "https://itsarvindhere.github.io/moviesinfo",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "react-scripts build",
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d build"
   },
